@@ -4,24 +4,24 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
-.aaa {
+.heading-section {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.aaa img {
+.heading-section img {
     width: 100%;
 }
-.aaa .more_inf {
+.heading-section .heading-section__link {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+.heading-section { text-align: center;
 }
 }
-.centered-main-page-element {
+.wrapper {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -128,7 +128,7 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+ul#completed-bloc label {
     text-decoration: line-through
     color: #888;
 }
