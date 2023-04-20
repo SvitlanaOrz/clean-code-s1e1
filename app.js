@@ -8,7 +8,7 @@
 // Event handling, user interaction is what starts the code execution.
 
 var taskInput = document.getElementById("new-task-item"); //Add a new task.
-var addButton = document.getElementsByTagName("button")[0]; //first button
+var addButton = document.getElementById("edd-button"); //first button
 var incompleteTaskHolder = document.getElementById("todo-section__items-list"); //ul of #todo-section__items-list
 var completedTasksHolder = document.getElementById(
   "completed-section__items-list"
@@ -36,15 +36,23 @@ var createNewTaskElement = function (taskString) {
 
   //Each elements, needs appending
   checkBox.type = "checkbox";
+  checkBox.classList.add("task-item-checkbox");
   editInput.type = "text";
   editInput.className = "task-item";
+  label.classList.add("task-item-name");
 
   editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
   editButton.className = "edit-button";
+  editButton.classList.add("button");
 
   deleteButton.className = "delete-button";
+  deleteButton.classList.add("button");
   deleteButtonImg.src = "./remove.svg";
+
   deleteButton.appendChild(deleteButtonImg);
+  deleteButtonImg.classList.add("delete-icon");
+
+  listItem.classList.add("item-description");
 
   //and appending.
   listItem.appendChild(checkBox);

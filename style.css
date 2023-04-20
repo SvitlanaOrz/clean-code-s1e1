@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -12,7 +12,7 @@ body {
   text-align: right;
 }
 
-.heading-section img {
+.heading-section__img {
   width: 100%;
 }
 
@@ -42,23 +42,23 @@ body {
   display: flex;
 }
 
-ul {
+.items-list {
   margin: 0;
   padding: 0px;
 }
 
-li,
+.item-description,
 .todo-section__title,
 .completed-section__title {
   list-style: none;
 }
 
-input,
-button {
+.input,
+.button {
   outline: none;
 }
 
-button {
+.button {
   background: none;
   border: 0px;
   color: #888;
@@ -83,7 +83,7 @@ button {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.task-item-input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -96,7 +96,7 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+.task-item-input:focus {
   color: #333;
 }
 
@@ -106,12 +106,12 @@ input[type="text"]:focus {
   margin: 0 0 20px;
 }
 
-input#new-task {
+#new-task-item {
   width: 318px;
 }
 
 /* Task list */
-li {
+.item-description {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -120,51 +120,51 @@ li {
   align-items: center;
 }
 
-li > * {
+.item-description > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.item-description > .task-item-checkbox {
   margin: 0 10px;
 }
 
-li > label {
+.item-description > .task-item-name {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-li > input[type="text"] {
+.item-description > .task-item-input {
   width: 226px;
 }
 
-.delete-button img {
+.delete-button .delete-icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete-button img:hover {
+.delete-button .delete-icon:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-bloc label {
+#completed-section__items-list .task-item-name {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type="text"] {
+.items-list .item-description .task-item-input {
   display: none;
 }
 
-ul li.todo-section__edit-item input[type="text"] {
+.items-list .item-description.todo-section__edit-item .task-item-input {
   display: inline-block;
   width: 224px;
 }
 
-ul li.todo-section__edit-item label {
+.items-list .item-description.todo-section__edit-item .task-item-name {
   display: none;
 }
