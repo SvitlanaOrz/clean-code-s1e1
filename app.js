@@ -35,7 +35,7 @@ var createNewTaskElement=function(taskString){
     listItem.className="item-description";
 
     label.innerText=taskString;
-    label.className='task-item';
+    label.className="task-item";
     label.classList.add("task-item-name");
 
     //Each elements, needs appending
@@ -55,7 +55,7 @@ var createNewTaskElement=function(taskString){
     deleteButton.className="delete-button";
     deleteButton.classList.add("button");
 
-    deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.src="./remove.svg";
     deleteButtonImg.classList.add("delete-icon");
     deleteButton.appendChild(deleteButtonImg);
 
@@ -94,7 +94,7 @@ var editTask=function(){
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector('input[type=text]');
+    var editInput=listItem.querySelector("input[type=text]");
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".edit-button");
     var containsClass=listItem.classList.contains("todo-section__edit-item");
