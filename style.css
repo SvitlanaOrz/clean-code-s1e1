@@ -12,11 +12,11 @@
   text-align: right;
 }
 
-.heading-section .heading-section__img {
+.heading-section__img {
   width: 100%;
 }
 
-.heading-section .heading-section__link{
+.heading-section__link{
   font-family: fantasy, cursive;
 }
 
@@ -159,11 +159,14 @@
 .task-item-input {
   display: none;
 }
-
+.add-item-section .task-item-input {
+  display: inline-block;
+}
 .todo-section__edit-item .task-item-input {
   display: inline-block;
   width: 224px;
 }
+
 
 .todo-section__edit-item .task-item-name  {
   display: none;
