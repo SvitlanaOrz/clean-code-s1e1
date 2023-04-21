@@ -106,7 +106,7 @@
   margin: 0 0 20px;
 }
 
-#new-task-item {
+.new-task {
   width: 318px;
 }
 
@@ -150,7 +150,7 @@
 }
 
 /* Completed */
-#completed-section__items-list .task-item-name {
+.completed-section__items-list .task-item-name {
   text-decoration: line-through;
   color: #888;
 }
