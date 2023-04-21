@@ -159,14 +159,15 @@
 .task-item-input {
   display: none;
 }
+
 .add-item-section .task-item-input {
   display: inline-block;
 }
+
 .todo-section__edit-item .task-item-input {
   display: inline-block;
   width: 224px;
 }
-
 
 .todo-section__edit-item .task-item-name  {
   display: none;

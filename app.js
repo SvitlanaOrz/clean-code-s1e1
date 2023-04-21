@@ -32,22 +32,31 @@ var createNewTaskElement=function(taskString){
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
 
+    listItem.className="item-description";
+
     label.innerText=taskString;
-    label.className='task';
+    label.className='task-item';
+    label.classList.add("task-item-name");
 
     //Each elements, needs appending
     checkBox.type="checkbox";
+    checkBox.className ="task-item-checkbox";
+    checkBox.classList.add("input");
+  
     editInput.type="text";
-    editInput.className="task";
+    editInput.className="task-item";
+    editInput.classList.add("task-item-input");
+    editInput.classList.add("input");
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="edit-button";
     editButton.classList.add("button");
 
     deleteButton.className="delete-button";
-    editButton.classList.add("button");
-    
+    deleteButton.classList.add("button");
+
     deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.classList.add("delete-icon");
     deleteButton.appendChild(deleteButtonImg);
 
 
@@ -87,7 +96,7 @@ var editTask=function(){
 
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
-    var editBtn=listItem.querySelector(".edit");
+    var editBtn=listItem.querySelector(".edit-button");
     var containsClass=listItem.classList.contains("todo-section__edit-item");
     //If class of the parent is .todo-section__edit-item
     if(containsClass){
