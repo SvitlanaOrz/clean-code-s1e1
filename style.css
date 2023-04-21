@@ -36,7 +36,7 @@
 .task-item {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .add-item-section__task-wrapper {
@@ -134,7 +134,7 @@
 }
 
 .item-description > .task-item-input {
-  width: 226px
+  width: 226px;
 }
 
 .delete-icon {
@@ -149,18 +149,18 @@
 
 /* Completed */
 #completed-section__items-list .task-item-name {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .task-item-input {
-  display: none
+  display: none;
 }
 
 .todo-section__edit-item .task-item-input {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .todo-section__edit-item .task-item-name  {
