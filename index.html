@@ -11,7 +11,7 @@
           charset="utf-8"
           >
   </head>
-  <body>
+  <body class="page">
     <header>
       <div class="heading-section">
         <img class="heading-section__img" 
@@ -36,7 +36,7 @@
         </section>
         <section class="todo-section">
           <h3 class="todo-section__title title">Todo</h3>
-          <ul class="items-list" id="todo-section__items-list" id="incompleteTasks">
+          <ul class="items-list" id="todo-section__items-list" >
             <li class="item-description">
               <input class="task-item-checkbox input" type="checkbox">
               <label class="task-item task-item-name" >Pay Bills</label>
@@ -49,24 +49,24 @@
             <li class="todo-section__edit-item item-description" >
               <input class="task-item-checkbox input" type="checkbox">
               <label class="task-item task-item-name">Go Shopping</label>
-              <input class="task-item task-item-input input" type="text" value="Go Shopping" class="task">
+              <input class="task-item task-item-input input" type="text" value="Go Shopping" >
               <button class="edit-button button">Save</button>
               <button class="delete-button button">
-                <img src="./remove.svg" alt="delete button">
+                <img class="delete-icon" src="./remove.svg" alt="delete button">
               </button>
             </li>
           </ul>
         </section>
         <section class="completed-section">
           <h3>Completed</h3>
-          <ul class="items-list" id="completed-section__items-list" id="completed-tasks">
-            <li>
+          <ul class="items-list" id="completed-section__items-list">
+            <li class="item-description">
               <input class="task-item-checkbox input" type="checkbox" checked>
               <label class="task-item task-item-name">See the Doctor</label>
               <input class="task-item task-item-input input" type="text" >
               <button class="edit-button button">Edit</button>
               <button class="delete-button button">
-                <img src="./remove.svg" alt="delete button">
+                <img class="delete-icon" src="./remove.svg" alt="delete button">
               </button>
             </li>
           </ul>
